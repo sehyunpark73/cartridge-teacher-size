@@ -5,7 +5,7 @@ from huggingface_hub import CommitOperationAdd, HfApi, hf_hub_download
 from safetensors.torch import load_file, save
 from torch import Tensor
 
-REPO_NAME = "s4986p/cartridge-teacher-size"
+REPO_NAME = "sehyunpark73/cartridge-teacher-size"
 
 
 def upload_file(
