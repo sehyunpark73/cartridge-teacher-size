@@ -2,8 +2,8 @@
 
 ## 배경
 - [cartridges](https://arxiv.org/abs/2506.06266)는 긴 문서 대신 문서마다 학습한 작은 kv cache인 cartridge를 씀
-- cartridge는 student 자신을 teacher로 학습함
-- 이 프로젝트는 teacher를 더 큰 모델로 바꾸면 cartridge가 나아지는지 확인
+- 이때 cartridge는 student 자신을 teacher로 학습함
+- 이 프로젝트는 teacher를 더 큰 모델로 바꾸면 cartridge가 더 나아지는지 확인
 
 ## 요약
 - [teacher별 정확도](#teacher별-정확도): 더 큰 teacher로 학습하면 나아지는지 → 나아지지 않고 태그 없음만 늘어남
@@ -17,11 +17,6 @@
 ## 남은 실험
 - teacher response가 잘린 synthesis를 빼고 다시 학습해, cross의 태그 없음이 줄어드는지 확인
 - student를 7b급 모델로 키워도 더 큰 teacher가 나아지지 않는지 확인
-
-## 관련 연구
-#### [cartridges: lightweight and general-purpose long context representations via self-study](https://arxiv.org/abs/2506.06266)
-- cartridge를 student 자신의 self-study로 학습하면, icl에 가까운 정확도를 훨씬 적은 메모리로 낸다고 보고
-- 이 프로젝트는 teacher를 더 큰 모델로 바꿔 비교
 
 ## 공통 설정
 - 각 실험의 설정에 따로 적지 않으면 아래 값을 사용
